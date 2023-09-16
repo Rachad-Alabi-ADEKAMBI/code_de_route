@@ -170,19 +170,26 @@ a{
         ul{
             li{
                 display: block;
-                margin: 5px auto;
+                margin: 0px auto;
                 .link{
-                    color: $secondary;
-                    font-size: smaller;
                     width: 100%;
-                    color: $grey;
 
-                    strong{
-                       i{
+                   a{
+                    color: $grey;
+                    font-weight: bold;
+                    font-size: 1em;
+                        i{
+                            font-size: 1.6em;
+                        }
+                   }
+
+                   a:hover{
+                    color: $secondary;
+
+                    i{
                         color: $secondary;
-                        font-size: 0.7em;
-                       }
                     }
+                   }
                 }
             }
         }

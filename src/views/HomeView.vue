@@ -53,7 +53,6 @@
       </div>
     </div>
 
-
     <section class="hero section" id="hero">
         <div class="hero__content">
             <div class="hero__content__text">
@@ -69,6 +68,12 @@
 
                 <span>Disponible sur  <i class="fa-brands fa-apple"></i>
                   <i class="fa-brands fa-google-play"></i> </span>
+            </div>
+
+            <div class="hero__content__image">
+                <div class="image" id="canvas3d">
+
+                </div>
             </div>
         </div>
 
@@ -540,16 +545,10 @@ export default{
         showTestimony2 : false,
         showTestimony3 : false,
         showTestimony4 : false,
-          testimonies:[
-              {
-                  id: 1, title: 'title 1', date: '15/09/2023', image: 'http://127.0.0.1/basketball/public/images/img4.jpg', preview: 'Bavaria" Bayern are the automatic favorites in every Bundesliga match due to the quality of their squad. Harry Kane also began to make a difference from the first matches: in the game against Werder he scored '
-              }
-
-          ],
       }
     },
     mounted: function() {
-    this.getTestimony1();
+      this.getTestimony1();
     },
     methods: {
       getTestimony1(){

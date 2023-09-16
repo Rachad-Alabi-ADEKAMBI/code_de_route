@@ -1,0 +1,81 @@
+<template>
+  <ul>
+    <li>
+      <router-link to="/hero" class="link">
+        <a href="#hero" class="link" data-section="hero" :style="link_hero">
+          Intro <i class="bi bi-dot"></i>
+        </a>
+      </router-link>
+    </li>
+    <li>
+      <router-link to="/red" class="link">
+        <a href="#red" class="link" data-section="red" :style="link_red">
+          C'est quoi ? <i class="bi bi-dot"></i>
+        </a>
+      </router-link>
+    </li>
+    <li>
+      <router-link to="/steps" class="link">
+        <a href="#steps" class="link" data-section="steps" :style="link_steps">
+          Comment <i class="bi bi-dot"></i>
+        </a>
+      </router-link>
+    </li>
+    <li>
+      <router-link to="/testimonies" class="link">
+        <a href="#testimonies" class="link" data-section="testimonies" :style="link_testimonies">
+          Avis <i class="bi bi-dot"></i>
+        </a>
+      </router-link>
+    </li>
+    <li>
+      <router-link to="/register" class="link">
+        <a href="#register" class="link" data-section="register" :style="link_register">
+          Connexion <i class="bi bi-dot"></i>
+        </a>
+      </router-link>
+    </li>
+  </ul>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      link_hero: { color: 'black' },
+      link_red: { color: 'black' },
+      link_steps: { color: 'black' },
+      link_testimonies: { color: 'black' },
+      link_register: { color: 'black' },
+    };
+  },
+  mounted() {
+    this.updateLinkColors();
+  },
+  methods: {
+    updateLinkColors() {
+      const url = window.location.href;
+
+      if (url.endsWith('#hero')) {
+        this.link_hero.color = 'red';
+      } else if (url.endsWith('#red')) {
+        this.link_red.color = 'red';
+      } else if (url.endsWith('#steps')) {
+        this.link_steps.color = 'red';
+      } else if (url.endsWith('#testimonies')) {
+        this.link_testimonies.color = 'red';
+      } else if (url.endsWith('#register')) {
+        this.link_register.color = 'red';
+      }
+    },
+  },
+};
+</script>
+
+<style>
+/* Define styles for the active item */
+.active {
+  font-weight: bold;
+  color: red;
+}
+</style>

@@ -139,17 +139,24 @@ a {
 }
 .header__more ul li {
   display: block;
-  margin: 5px auto;
+  margin: 0px auto;
 }
 .header__more ul li .link {
-  color: #273250;
-  font-size: smaller;
   width: 100%;
-  color: grey;
 }
-.header__more ul li .link strong i {
+.header__more ul li .link a {
+  color: grey;
+  font-weight: bold;
+  font-size: 1em;
+}
+.header__more ul li .link a i {
+  font-size: 1.6em;
+}
+.header__more ul li .link a:hover {
   color: #273250;
-  font-size: 0.7em;
+}
+.header__more ul li .link a:hover i {
+  color: #273250;
 }
 
 .left {
