@@ -24,6 +24,7 @@ html, body{
     font-weight: 700;
 }
 
+
 h2{
     color: $secondary;
     font-size: 2.6em;
@@ -206,7 +207,8 @@ a{
     width: 480px;
     height: 100vh;
     background-color: whitesmoke;
-    display: none;
+  //  display: none;
+  left: -100%;
 
     .aside{
         display: block;
@@ -215,14 +217,12 @@ a{
         padding-top: 20px;
         position: relative;
 
-        img{
+        .image_left{
             position: absolute;
-            right: 20px;
-            width: 200px;
-            height: 70vh;
-            top: 60px;
-            height: auto
-
+            right: 5px;
+            top: 80px;
+            padding-top: 30px;
+            margin: auto 5px auto auto;
         }
 
         &__top{
@@ -405,9 +405,9 @@ a{
 
     &__image{
         text-align: center;
-        img{
-            width: 330px;
-            height: auto;
+
+        .image_red{
+
         }
     }
 

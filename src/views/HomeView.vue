@@ -1,7 +1,7 @@
 <template>
     <div class="left" id="left">
       <div class="aside">
-        <img src="images/human2.png" alt="">
+        <spline-viewer  class="image_left" url="https://prod.spline.design/tKrFnKbnfOqsC1Bt/scene.splinecode"></spline-viewer>
 
         <div class="aside__top">
           <div class="close">
@@ -56,10 +56,7 @@
     <section class="hero section" id="hero">
         <div class="hero__content">
             <div class="hero__content__text">
-                <h1>
-                    Passe ton code de la route vite,
-                     très bien fait !
-                </h1>
+                <h1 id="text" ></h1>
 
                 <button class="btn btn-primary"
                  >
@@ -70,7 +67,7 @@
                   <i class="fa-brands fa-google-play"></i> </span>
             </div>
 
-            <div class="hero__content__image" id="logo">
+            <div class="hero__content__image">
                 <div class="image">
                   <spline-viewer url="https://prod.spline.design/zMMzj0TovG0skufJ/scene.splinecode"></spline-viewer>
                 </div>
@@ -100,7 +97,10 @@
         </div>
 
         <div class="red__image">
-          <img src="http://127.0.0.1/codee/public/images/human1.png" alt="">
+            <div class="image_red">
+              <spline-viewer url="https://prod.spline.design/m0E2ZsljCD4aRLMl/scene.splinecode"></spline-viewer>
+
+            </div>
         </div>
 
         <div class="red__infos">

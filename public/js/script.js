@@ -8,14 +8,31 @@ app.load('https://prod.spline.design/cv1nun-3z7SV32be/scene.splinecode');
 function displayLeft() {
     const left = document.getElementById('left');
     const menu = document.getElementById('menu');
-      left.style.display = 'block';
-  //  menu.style.z-index = '-99999';
+     // left.style.display = 'block';
+        left.style.left = '0';
+        left.style.transition =  '1s';
+
   }
 
   function closeLeft(){
     const left = document.getElementById('left');
-      left.style.display = 'none';
+    //  left.style.display = 'none';
+    left.style.left = '-100%';
+    left.style.transition =  '1s';
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const textElement = document.getElementById("text");
+    const textContent = "Passe ton code de la route vite, très bien fait !";
+
+    function typeText() {
+        textElement.textContent = textContent;
+    }
+
+    setTimeout(typeText, 1000); // Démarrer l'animation après un délai d'une seconde
+});
+
+
 
 function changeUrl(txt){
     window.location.replace('http://127.0.0.1:8080/#' + txt)

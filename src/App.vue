@@ -1,8 +1,8 @@
 <template>
 
-<header class="header">
+<header class="header animate__animated animate__fadeInDown">
       <div class="header__btn"  id="btn"
-      onclick="displayLeft()">
+            onclick="displayLeft()">
         <i class="fas fa-bars"></i>
       </div>
 

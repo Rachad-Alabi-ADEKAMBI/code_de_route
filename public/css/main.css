@@ -170,7 +170,7 @@ a {
   width: 480px;
   height: 100vh;
   background-color: whitesmoke;
-  display: none;
+  left: -100%;
 }
 .left .aside {
   display: block;
@@ -179,13 +179,12 @@ a {
   padding-top: 20px;
   position: relative;
 }
-.left .aside img {
+.left .aside .image_left {
   position: absolute;
-  right: 20px;
-  width: 200px;
-  height: 70vh;
-  top: 60px;
-  height: auto;
+  right: 5px;
+  top: 80px;
+  padding-top: 30px;
+  margin: auto 5px auto auto;
 }
 .left .aside__top {
   display: flex;
@@ -341,10 +340,6 @@ a {
 }
 .red__image {
   text-align: center;
-}
-.red__image img {
-  width: 330px;
-  height: auto;
 }
 .red__infos {
   display: flex;
