@@ -123,6 +123,9 @@ a {
   font-size: 2.5em;
   margin: -10px auto;
 }
+.header__logo a {
+  color: #F76448;
+}
 .header__menu ul li {
   display: inline;
   margin: 10px;
@@ -136,6 +139,9 @@ a {
 }
 .header__menu ul li:hover .link {
   color: #273250;
+}
+.header__more {
+  z-index: 9999;
 }
 .header__more ul li {
   display: block;
@@ -291,6 +297,14 @@ a {
 .hero__content__text span i {
   margin-left: 15px;
 }
+.hero__content__image {
+  flex: 1;
+}
+.hero__content__image .image {
+  width: 530px;
+  margin: 60px auto;
+  border-radius: 10px;
+}
 .hero__infos {
   display: flex;
   flex-direction: row;
@@ -298,7 +312,8 @@ a {
   flex-wrap: wrap;
   margin: 35px auto 20px auto;
   text-align: center;
-  width: 80%;
+  width: 90%;
+  justify-content: space-evenly;
 }
 .hero__infos__info {
   flex: 1;
@@ -411,6 +426,7 @@ a {
   padding-top: 40px;
   margin: 350px auto 0 auto;
   text-align: center;
+  z-index: -9999;
 }
 .play__video {
   width: 800px;

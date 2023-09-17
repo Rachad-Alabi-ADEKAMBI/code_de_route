@@ -6,13 +6,13 @@
         <i class="fas fa-bars"></i>
       </div>
 
-      <div class="header__logo" id="header__logo">
+      <div class="header__logo" id="logo">
         <a href="/">
             CODE
         </a>
       </div>
 
-      <div class="header__menu" id="header__menu">
+      <div class="header__menu" id="nav">
         <ul>
           <li>
               <router-link to="/" class="link">Code de la route</router-link> |
@@ -27,6 +27,7 @@
           </li>
         </ul>
       </div>
+
       <div class="header__more nav">
         <ul>
             <li>
@@ -46,7 +47,7 @@
             <li>
               <router-link to="/steps" class="link">
                 <a href="#steps" data-section="steps" id="link_steps" >
-                  Comment <i class="bi bi-dot" id="link_steps_dot"></i>
+                  Comment ? <i class="bi bi-dot" id="link_steps_dot"></i>
                 </a>
               </router-link>
             </li>
@@ -58,7 +59,7 @@
                 </a>
               </router-link>
             </li>
-            <li>
+            <li style="margin-top: 10px;">
               <router-link to="/register" class="link">
                 <a href=""  data-section="register" >
                   Connexion <i class="bi bi-dot"></i>

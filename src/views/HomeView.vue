@@ -70,14 +70,14 @@
                   <i class="fa-brands fa-google-play"></i> </span>
             </div>
 
-            <div class="hero__content__image">
-                <div class="image" id="canvas3d">
-
+            <div class="hero__content__image" id="logo">
+                <div class="image">
+                  <spline-viewer url="https://prod.spline.design/zMMzj0TovG0skufJ/scene.splinecode"></spline-viewer>
                 </div>
             </div>
         </div>
 
-        <div class="hero__infos">
+        <div class="hero__infos" id="nav">
             <div class="hero__infos__info">
               <strong>7</strong> JOURS GRATUITS
             </div>

@@ -23,7 +23,8 @@ function changeUrl(txt){
 
 
 function updateURL() {
-    const sections = ['hero', 'red', 'steps', 'testimonies']; // Define your section IDs here
+    const sections = ['hero', 'red', 'steps', 'play', 'solutions',
+    'testimonies', 'register', 'blue']; // Define your section IDs here
     const scrollPosition = window.scrollY;
 
     for (const section of sections) {
@@ -42,9 +43,49 @@ function updateURL() {
     }
 }
 
+/*
+function doSomethingIfNotAtTop() {
+    const scrollY = window.scrollY || document.documentElement.scrollTop;
+
+    // Define a threshold for when "not at the very top" means something
+    const threshold = 100; // You can adjust this value as needed
+    const logo = document.getElementById('logo');
+    const nav = document.getElementById('nav');
+
+    // Check if the scroll position is below the threshold
+    if (scrollY > threshold) {
+        logo.style.display = 'none';
+        nav.style.display = 'none';
+    } else{
+        logo.style.display = 'block';
+            nav.style.display = 'block';
+    }
+  }
+
+  // Call the function when the page is loaded or when needed
+//  window.addEventListener('scroll', doSomethingIfNotAtTop);
+*/
+
 // Function to detect the URL while scrolling
 function detectUrlOnScroll() {
     window.addEventListener('scroll', function () {
+        const scrollY = window.scrollY || document.documentElement.scrollTop;
+
+        // Define a threshold for when "not at the very top" means something
+        const threshold = 100; // You can adjust this value as needed
+        const logo = document.getElementById('logo');
+        const nav = document.getElementById('nav');
+
+        // Check if the scroll position is below the threshold
+        if (scrollY > threshold) {
+            logo.style.display = 'none';
+            nav.style.display = 'none';
+        } else{
+            logo.style.display = 'block';
+                nav.style.display = 'block';
+        }
+
+
       const currentUrl = window.location.href;
       const link_hero = document.getElementById('link_hero');
       const link_hero_dot = document.getElementById('link_hero_dot');
@@ -60,7 +101,7 @@ function detectUrlOnScroll() {
 
       if (currentUrl.includes('/#hero')) {
             link_hero.style.color = '#273250';
-            link_hero.style.color = 'red';
+            link_hero_dot.style.color = 'red';
 
             link_red.style.color = 'grey';
             link_red_dot.style.color = 'grey';
@@ -71,18 +112,19 @@ function detectUrlOnScroll() {
             link_testimonies.style.color = 'grey';
             link_testimonies_dot.style.color = 'grey';
 
+
       } else if (currentUrl.includes('/#red')) {
             link_red.style.color = 'white';
             link_red_dot.style.color = 'white'
 
             link_hero.style.color = 'grey';
-            link_hero.style.color = 'grey';
+            link_hero_dot.style.color = 'grey';
 
             link_steps.style.color = 'grey';
             link_steps_dot.style.color = 'grey';
 
             link_testimonies.style.color = 'grey';
-            link_testimonies_dot.style.color = 'grey'
+            link_testimonies_dot.style.color = 'grey';
     }
      else if (currentUrl.includes('/#steps')) {
         link_steps.style.color = '#273250';
@@ -92,15 +134,28 @@ function detectUrlOnScroll() {
         link_red_dot.style.color = 'grey';
 
         link_hero.style.color = 'grey';
-        link_hero.style.color = 'grey';
+        link_hero_dot.style.color = 'grey';
 
         link_testimonies.style.color = 'grey';
         link_testimonies_dot.style.color = 'grey';
 
     }
-    else  {
-        link_testimonies.style.color = '#273250';
-        link_testimonies_dot.style.color = 'red';
+    else if (currentUrl.includes('/#play')) {
+        link_testimonies.style.color = 'grey';
+        link_testimonies_dot.style.color = 'grey';
+
+        link_steps.style.color = 'white';
+        link_steps_dot.style.color = 'white';
+
+        link_red.style.color = 'grey';
+        link_red_dot.style.color = 'grey';
+
+        link_hero.style.color = 'grey';
+        link_hero_dot.style.color = 'grey';
+    }
+    else if (currentUrl.includes('/#solutions')) {
+        link_testimonies.style.color = 'grey';
+        link_testimonies_dot.style.color = 'grey';
 
         link_steps.style.color = '#273250';
         link_steps_dot.style.color = 'red';
@@ -109,14 +164,55 @@ function detectUrlOnScroll() {
         link_red_dot.style.color = 'grey';
 
         link_hero.style.color = 'grey';
+        link_hero_dot.style.color = 'grey';
+    }
+     else if (currentUrl.includes('/#testimonies')) {
+        link_testimonies.style.color = '#273250';
+        link_testimonies_dot.style.color = 'red';
+
+        link_steps.style.color = 'grey';
+        link_steps_dot.style.color = 'grey';
+
+        link_red.style.color = 'grey';
+        link_red_dot.style.color = 'grey';
+
         link_hero.style.color = 'grey';
+        link_hero_dot.style.color = 'grey';
+    }
+
+    else if (currentUrl.includes('/#register')) {
+        link_testimonies.style.color = 'white';
+        link_testimonies_dot.style.color = 'white';
+
+        link_steps.style.color = 'grey';
+        link_steps_dot.style.color = 'grey';
+
+        link_red.style.color = 'grey';
+        link_red_dot.style.color = 'grey';
+
+        link_hero.style.color = 'grey';
+        link_hero_dot.style.color = 'grey';
+    }
+
+    else if (currentUrl.includes('/#blue')) {
+        link_testimonies.style.color = 'white';
+        link_testimonies_dot.style.color = 'white';
+
+        link_steps.style.color = 'grey';
+        link_steps_dot.style.color = 'grey';
+
+        link_red.style.color = 'grey';
+        link_red_dot.style.color = 'grey';
+
+        link_hero.style.color = 'grey';
+        link_hero_dot.style.color = 'grey';
     }
 
       // Add more conditions as needed based on the URLs you want to detect
     });
   }
 
-  // Call the function to start detecting the URL while scrolling
+// Call the function to start detecting the URL while scrolling
   detectUrlOnScroll();
 
 
