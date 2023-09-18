@@ -292,6 +292,11 @@ a {
   color: #273250;
   font-family: "Lyon Display Web Black Regular";
 }
+.hero__content__text .btn {
+  width: 0;
+  overflow: hidden;
+  transition: width 1s ease-in-out; /* Animation de la largeur */
+}
 .hero__content__text span {
   margin: 30px auto;
   color: #273250;

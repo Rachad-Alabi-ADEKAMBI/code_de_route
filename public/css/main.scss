@@ -351,6 +351,12 @@ a{
                 font-family: "Lyon Display Web Black Regular";
             }
 
+            .btn{
+                width: 0;
+                overflow: hidden;
+                transition: width 1s ease-in-out; /* Animation de la largeur */
+            }
+
             span{
                 margin: 30px auto;
                 color: $secondary;

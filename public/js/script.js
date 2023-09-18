@@ -1,3 +1,4 @@
+//h1
 var showText = function (target, message, index, interval) {
     if (index < message.length) {
       //$(target).append(message[index++]);
@@ -9,6 +10,20 @@ var showText = function (target, message, index, interval) {
   $(function () {
     showText("#msg", "Passe ton code de la route, vite fait, très bien fait !!", 0, 80);
   });
+
+
+  //header btn
+  $(document).ready(function() {
+    // Sélectionnez le bouton
+    var $button = $('.animated-button');
+
+    // Définissez la largeur finale du bouton
+    var finalWidth = 220; // Ajustez la largeur finale selon vos besoins
+
+    // Animez la largeur du bouton
+    $button.css('width', finalWidth + 'px');
+});
+
 
 
 function displayLeft() {
@@ -217,7 +232,7 @@ window.addEventListener('scroll', updateURL);
 // Call updateURL initially to set the URL fragment on page load
 updateURL();
 
-displayText();
+//displayText();
 
 
 

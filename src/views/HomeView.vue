@@ -60,7 +60,7 @@
                 <h1 id="msg">
                 </h1>
 
-                <button class="btn btn-primary"
+                <button class="btn btn-primary animated-button"
                  >
                     Essayer gratuitement
                 </button>  <br><br>
