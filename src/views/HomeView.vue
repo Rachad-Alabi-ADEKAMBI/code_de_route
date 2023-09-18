@@ -56,7 +56,9 @@
     <section class="hero section" id="hero">
         <div class="hero__content">
             <div class="hero__content__text">
-                <h1 id="text" ></h1>
+
+                <h1 id="msg">
+                </h1>
 
                 <button class="btn btn-primary"
                  >

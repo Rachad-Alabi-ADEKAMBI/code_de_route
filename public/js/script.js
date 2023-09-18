@@ -1,8 +1,14 @@
-/*import { Application } from '@splinetool/runtime';
-const canvas = document.getElementById('canvas3d');
-const app = new Application(canvas);
-app.load('https://prod.spline.design/cv1nun-3z7SV32be/scene.splinecode');
-*/
+var showText = function (target, message, index, interval) {
+    if (index < message.length) {
+      //$(target).append(message[index++]);
+      $(target).text($(target).text() + message[index++]);
+      setTimeout(function () { showText(target, message, index, interval); }, interval);
+    }
+  }
+
+  $(function () {
+    showText("#msg", "Passe ton code de la route, vite fait, très bien fait !!", 0, 80);
+  });
 
 
 function displayLeft() {
@@ -21,16 +27,6 @@ function displayLeft() {
     left.style.transition =  '1s';
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    const textElement = document.getElementById("text");
-    const textContent = "Passe ton code de la route vite, très bien fait !";
-
-    function typeText() {
-        textElement.textContent = textContent;
-    }
-
-    setTimeout(typeText, 1000); // Démarrer l'animation après un délai d'une seconde
-});
 
 
 
@@ -60,28 +56,9 @@ function updateURL() {
     }
 }
 
-/*
-function doSomethingIfNotAtTop() {
-    const scrollY = window.scrollY || document.documentElement.scrollTop;
 
-    // Define a threshold for when "not at the very top" means something
-    const threshold = 100; // You can adjust this value as needed
-    const logo = document.getElementById('logo');
-    const nav = document.getElementById('nav');
 
-    // Check if the scroll position is below the threshold
-    if (scrollY > threshold) {
-        logo.style.display = 'none';
-        nav.style.display = 'none';
-    } else{
-        logo.style.display = 'block';
-            nav.style.display = 'block';
-    }
-  }
 
-  // Call the function when the page is loaded or when needed
-//  window.addEventListener('scroll', doSomethingIfNotAtTop);
-*/
 
 // Function to detect the URL while scrolling
 function detectUrlOnScroll() {
@@ -121,7 +98,7 @@ function detectUrlOnScroll() {
             link_hero_dot.style.color = 'red';
 
             link_red.style.color = 'grey';
-            link_red_dot.style.color = 'grey';
+            link_red_dot.style.diplay = 'grey';
 
             link_steps.style.color = 'grey';
             link_steps_dot.style.color = 'grey'
@@ -239,6 +216,8 @@ window.addEventListener('scroll', updateURL);
 
 // Call updateURL initially to set the URL fragment on page load
 updateURL();
+
+displayText();
 
 
 

@@ -132,7 +132,8 @@ a {
   cursor: pointer;
 }
 .header__menu ul li .link {
-  color: #273250;
+  color: #78797c;
+  font-weight: bold;
 }
 .header__menu ul li:hover {
   color: #F76448;
@@ -151,7 +152,7 @@ a {
   width: 100%;
 }
 .header__more ul li .link a {
-  color: grey;
+  color: #78797c;
   font-weight: bold;
   font-size: 1em;
 }
@@ -223,7 +224,7 @@ a {
   margin: 1px auto;
 }
 .left .aside__links ul li a {
-  color: grey;
+  color: #78797c;
   font-size: 1.4em;
   font-weight: bold;
 }
@@ -257,7 +258,7 @@ a {
 }
 .left .aside__more ul li a {
   font-size: 1.1em;
-  color: grey;
+  color: #78797c;
 }
 .left .aside__more ul li a:hover {
   color: #273250;
@@ -266,7 +267,7 @@ a {
 }
 
 .hero {
-  height: 90vh;
+  height: 95vh;
   width: 100%;
 }
 .hero__content {
@@ -275,7 +276,7 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 80%;
-  padding-top: 50px;
+  padding-top: 80px;
   margin: auto;
 }
 .hero__content__text {
@@ -283,18 +284,21 @@ a {
   text-align: left;
 }
 .hero__content__text h1 {
-  width: 450px;
+  width: 400px;
   font-weight: bold;
   font-size: 2.7em;
   text-align: left;
+  margin: 15px auto;
   color: #273250;
   font-family: "Lyon Display Web Black Regular";
 }
 .hero__content__text span {
-  margin: 20px auto;
+  margin: 30px auto;
+  color: #273250;
 }
 .hero__content__text span i {
   margin-left: 15px;
+  color: #273250;
 }
 .hero__content__image {
   flex: 1;
@@ -311,11 +315,14 @@ a {
   flex-wrap: wrap;
   margin: 35px auto 20px auto;
   text-align: center;
-  width: 90%;
-  justify-content: space-evenly;
+  width: 80%;
 }
 .hero__infos__info {
   flex: 1;
+  text-align: left;
+  font-size: 1em;
+  color: #273250;
+  font-family: "Lyon Display Web Black Regular";
 }
 .hero__infos__info strong {
   font-size: 2em;
