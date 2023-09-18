@@ -24,8 +24,7 @@ var showText = function (target, message, index, interval) {
     $button.css('width', finalWidth + 'px');
 });
 
-
-
+//display left menu
 function displayLeft() {
     const left = document.getElementById('left');
     const menu = document.getElementById('menu');
@@ -35,21 +34,15 @@ function displayLeft() {
 
   }
 
-  function closeLeft(){
+//close left menu
+function closeLeft(){
     const left = document.getElementById('left');
     //  left.style.display = 'none';
     left.style.left = '-100%';
     left.style.transition =  '1s';
 }
 
-
-
-
-function changeUrl(txt){
-    window.location.replace('http://127.0.0.1:8080/#' + txt)
-  }
-
-
+//update URL
 function updateURL() {
     const sections = ['hero', 'red', 'steps', 'play', 'solutions',
     'testimonies', 'register', 'blue']; // Define your section IDs here
@@ -70,10 +63,6 @@ function updateURL() {
         }
     }
 }
-
-
-
-
 
 // Function to detect the URL while scrolling
 function detectUrlOnScroll() {
@@ -222,9 +211,7 @@ function detectUrlOnScroll() {
   }
 
 // Call the function to start detecting the URL while scrolling
-  detectUrlOnScroll();
-
-
+detectUrlOnScroll();
 
 // Attach the scroll event listener
 window.addEventListener('scroll', updateURL);
@@ -232,7 +219,29 @@ window.addEventListener('scroll', updateURL);
 // Call updateURL initially to set the URL fragment on page load
 updateURL();
 
-//displayText();
+document.addEventListener("DOMContentLoaded", function () {
+    const heroSection = document.querySelector(".hero");
+    const redSection = document.querySelector(".red");
+    let isMoving = false;
+
+    window.addEventListener("scroll", function () {
+        const scrollPosition = window.scrollY;
+        const heroHeight = heroSection.clientHeight;
+        const redSectionOffset = heroSection.offsetTop + heroHeight / 4; // Modifiez le déclencheur ici
+        const redSectionHeight = redSection.clientHeight;
+
+        if (scrollPosition >= redSectionOffset && !isMoving) {
+            isMoving = true;
+            redSection.style.transform = `translateY(-${redSectionHeight / 4}px)`; // Réduit la section de 1/4 de sa hauteur
+        } else if (scrollPosition < redSectionOffset && isMoving) {
+            isMoving = false;
+            redSection.style.transform = "translateY(0)";
+        }
+    });
+});
+
+
+
 
 
 

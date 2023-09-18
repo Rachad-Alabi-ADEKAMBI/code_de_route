@@ -102,15 +102,21 @@ a {
   width: 95%;
   margin: 10px auto;
   position: fixed;
+  padding-left: 20px;
 }
 .header__btn {
-  padding-left: 20px;
   cursor: pointer;
-}
-.header__btn i {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Use border-radius with 50% to make it round */
+  display: flex; /* Use flexbox to center the icon */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   font-size: 2em;
   color: #273250;
   cursor: pointer;
+  font-weight: 100;
 }
 .header__btn:hover {
   cursor: pointer;
@@ -121,10 +127,16 @@ a {
 .header__logo {
   color: #F76448;
   font-size: 2.5em;
-  margin: -10px auto;
+  padding-top: 5px;
 }
 .header__logo a {
+  color: #273250;
+  font-weight: bold;
+}
+.header__logo a span {
   color: #F76448;
+  font-style: italic;
+  font-weight: 400;
 }
 .header__menu ul li {
   display: inline;
@@ -269,6 +281,8 @@ a {
 .hero {
   height: 95vh;
   width: 100%;
+  position: relative;
+  z-index: -9999;
 }
 .hero__content {
   display: flex;
@@ -286,15 +300,16 @@ a {
 .hero__content__text h1 {
   width: 400px;
   font-weight: bold;
-  font-size: 2.7em;
+  font-size: 2.5em;
   text-align: left;
-  margin: 15px auto;
+  margin: 60px auto;
   color: #273250;
   font-family: "Lyon Display Web Black Regular";
 }
 .hero__content__text .btn {
   width: 0;
   overflow: hidden;
+  margin: 10px auto;
   transition: width 1s ease-in-out; /* Animation de la largeur */
 }
 .hero__content__text span {
@@ -335,12 +350,16 @@ a {
 }
 
 .red {
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
   background-color: #F76448;
   display: block;
   height: auto;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
+  position: relative;
   text-align: center;
+  transform: translateY(0);
+  transition: transform 0.5s ease;
+  z-index: -9998;
 }
 .red__top {
   padding-top: 60px;
@@ -378,6 +397,7 @@ a {
 
 .steps {
   display: block;
+  margin: -300px auto;
 }
 .steps h2 {
   color: #F76448;
@@ -458,8 +478,6 @@ a {
 }
 .play__content__image img {
   margin: auto;
-  width: 350px;
-  height: auto;
 }
 .play__content__text {
   text-align: left;

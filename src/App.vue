@@ -1,14 +1,13 @@
 <template>
 
 <header class="header animate__animated animate__fadeInDown">
-      <div class="header__btn"  id="btn"
-            onclick="displayLeft()">
-        <i class="fas fa-bars"></i>
+      <div class="header__btn"  id="btn" onclick="displayLeft()">
+        <i class="bi bi-list"></i>
       </div>
 
       <div class="header__logo" id="logo">
         <a href="/">
-            CODE
+            CO<span>DE</span>
         </a>
       </div>
 

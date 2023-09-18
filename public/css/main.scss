@@ -121,16 +121,22 @@ a{
     margin: 10px auto;
     position: fixed;
  //   z-index: -9999;
+ padding-left: 20px;
 
-    &__btn{
-        padding-left: 20px;
-        cursor: pointer;
-        i{
-            font-size: 2em;
-            color: $secondary;
-            cursor: pointer;
-        }
-    }
+ &__btn {
+    cursor: pointer;
+    background-color: $white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Use border-radius with 50% to make it round */
+    display: flex; /* Use flexbox to center the icon */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-size: 2em;
+    color: $secondary;
+    cursor: pointer;
+    font-weight: 100;
+}
 
     &__btn:hover{
         cursor: pointer;
@@ -143,10 +149,17 @@ a{
     &__logo{
         color: $primary;
         font-size: 2.5em;
-        margin: -10px auto;
+        padding-top: 5px;
 
         a{
-            color: $primary;
+            color: $secondary;
+            font-weight: bold;
+
+            span{
+                color: $primary;
+                font-style: italic;
+                font-weight: 400;
+            }
         }
     }
 
@@ -330,6 +343,8 @@ a{
 .hero{
     height: 95vh;
     width: 100%;
+    position: relative;
+    z-index: -9999;
 
     &__content{
         @include flex();
@@ -344,9 +359,9 @@ a{
             h1{
                 width: 400px;
                 font-weight: bold;
-                font-size: 2.7em;
+                font-size: 2.5em;
                 text-align: left;
-                margin: 15px auto;
+                margin: 60px auto;
                 color: $secondary;;
                 font-family: "Lyon Display Web Black Regular";
             }
@@ -354,6 +369,7 @@ a{
             .btn{
                 width: 0;
                 overflow: hidden;
+                margin: 10px auto;
                 transition: width 1s ease-in-out; /* Animation de la largeur */
             }
 
@@ -402,12 +418,16 @@ a{
 }
 
 .red{
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     background-color: #F76448;
     display: block;
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
+    position: relative;
     text-align: center;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+    z-index: -9998;
 
     &__top{
         padding-top: 60px;
@@ -455,6 +475,7 @@ a{
 
 .steps{
     display: block;
+    margin: -300px auto;
     h2{
         color: $primary;
         margin: auto;
@@ -539,8 +560,8 @@ a{
             flex: 1;
             img{
                 margin: auto;
-                width: 350px;
-                height: auto;
+           //     width: 350px;
+             //   height: auto;
             }
         }
 

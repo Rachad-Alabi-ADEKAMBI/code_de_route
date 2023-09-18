@@ -260,7 +260,7 @@
 
       <div class="play__content">
           <div class="play__content__image">
-            <img src="http://127.0.0.1/codee/public/images/human2.png" alt="">
+              <spline-viewer  class="image_left" url="https://prod.spline.design/tKrFnKbnfOqsC1Bt/scene.splinecode"></spline-viewer>
           </div>
 
           <div class="play__content__text">
