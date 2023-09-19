@@ -22,6 +22,7 @@ html, body{
     box-sizing: border-box;
     font-family: "Circular Air Light";
     font-weight: 700;
+   // background-color: #DFE5EF;
 }
 
 
@@ -109,6 +110,17 @@ a{
     font-weight: bolder;
 }
 
+.index1{
+    z-index: -9999;
+}
+
+.index2{
+    z-index: -9998;
+}
+
+.index3{
+    z-index: 9999;
+}
 
 .hidden{
     display:none;
@@ -120,23 +132,22 @@ a{
     width: 95%;
     margin: 10px auto;
     position: fixed;
- //   z-index: -9999;
- padding-left: 20px;
+    z-index: 9999;
+    padding-left: 20px;
 
- &__btn {
-    cursor: pointer;
-    background-color: $white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; /* Use border-radius with 50% to make it round */
-    display: flex; /* Use flexbox to center the icon */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    font-size: 2em;
-    color: $secondary;
-    cursor: pointer;
-    font-weight: 100;
-}
+    &__btn {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; /* Use border-radius with 50% to make it round */
+        display: flex; /* Use flexbox to center the icon */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        font-size: 2em;
+        color: $secondary;
+        cursor: pointer;
+        font-weight: 100;
+    }
 
     &__btn:hover{
         cursor: pointer;
@@ -228,7 +239,7 @@ a{
     .aside{
         display: block;
         margin-left: 0;
-        z-index: 99999;
+        z-index: - 9999;
         padding-top: 20px;
         position: relative;
 
@@ -344,7 +355,7 @@ a{
     height: 95vh;
     width: 100%;
     position: relative;
-    z-index: -9999;
+ //   z-index: -9999;
 
     &__content{
         @include flex();
@@ -381,6 +392,11 @@ a{
                     margin-left: 15px;
                     color: $secondary;
                 }
+            }
+
+            .btn:hover{
+                width: 220px;
+                transition: 500ms ease-in-out;
             }
         }
 
@@ -427,7 +443,7 @@ a{
     text-align: center;
     transform: translateY(0);
     transition: transform 0.5s ease;
-    z-index: -9998;
+  //  z-index: -9998;
 
     &__top{
         padding-top: 60px;
@@ -535,7 +551,7 @@ a{
     padding-bottom: 10px;
     position: relative;
     padding-top: 40px;
-    margin: 350px auto 0 auto;
+    margin: 580px auto 0 auto;
     text-align: center;
     z-index: -9999;
 
@@ -690,7 +706,9 @@ a{
                     border-radius: 10px;
                     color: grey;
                     margin: 10px auto;
+                    padding-top: 8px;
                     cursor: pointer;
+                    text-align: center;
                     }
 
                 .click:hover{

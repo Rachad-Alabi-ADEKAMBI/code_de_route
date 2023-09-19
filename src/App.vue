@@ -1,6 +1,7 @@
 <template>
 
-<header class="header animate__animated animate__fadeInDown">
+<header class="header animate__animated animate__fadeInDown"
+  id="header">
       <div class="header__btn"  id="btn" onclick="displayLeft()">
         <i class="bi bi-list"></i>
       </div>

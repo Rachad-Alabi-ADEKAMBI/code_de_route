@@ -1,3 +1,4 @@
+
 //h1
 var showText = function (target, message, index, interval) {
     if (index < message.length) {
@@ -25,21 +26,24 @@ var showText = function (target, message, index, interval) {
 });
 
 //display left menu
+
 function displayLeft() {
     const left = document.getElementById('left');
     const menu = document.getElementById('menu');
-     // left.style.display = 'block';
-        left.style.left = '0';
-        left.style.transition =  '1s';
+
+    left.style.left = '0';
+    left.style.transition =  '1s';
+    left.classList.add('index3');
 
   }
 
 //close left menu
 function closeLeft(){
     const left = document.getElementById('left');
-    //  left.style.display = 'none';
+
     left.style.left = '-100%';
     left.style.transition =  '1s';
+    left.classList.remove('index3');
 }
 
 //update URL
@@ -83,6 +87,8 @@ function detectUrlOnScroll() {
                 nav.style.display = 'block';
         }
 
+        const btn = document.getElementById('btn');
+
 
       const currentUrl = window.location.href;
       const link_hero = document.getElementById('link_hero');
@@ -100,6 +106,8 @@ function detectUrlOnScroll() {
       if (currentUrl.includes('/#hero')) {
             link_hero.style.color = '#273250';
             link_hero_dot.style.color = 'red';
+            hero.classList.remove('index1');
+            red.classList.remove('index2');
 
             link_red.style.color = 'grey';
             link_red_dot.style.diplay = 'grey';
@@ -112,6 +120,11 @@ function detectUrlOnScroll() {
 
 
       } else if (currentUrl.includes('/#red')) {
+            hero.classList.add('index1');
+            red.classList.add('index2');
+
+            btn.style.background = 'white';
+
             link_red.style.color = 'white';
             link_red_dot.style.color = 'white'
 

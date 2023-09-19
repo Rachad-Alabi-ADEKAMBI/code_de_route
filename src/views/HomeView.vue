@@ -141,7 +141,7 @@
                     <i class="bi bi-check-circle"></i>
                   </div>
                   <p>
-                    Un mode « hors-ligne » pour réviser n’importe
+                    Un mode "hors-ligne"  pour réviser n'importe
                     où (dans le train, le bus, en avion, et même sur un bateau…)
                   </p>
             </div>
@@ -151,7 +151,8 @@
                     <i class="bi bi-check-circle"></i>
                   </div>
                   <p>
-                    Un suivi personnalisé pour visualiser facilement ta progression
+                    Un suivi personnalisé pour visualiser facilement ta
+                    progression
                   </p>
             </div>
 
@@ -346,7 +347,7 @@
                 </div>
 
                 <div class="texts">
-                    <div class="text" v-if="showTestimony1">
+                    <div class="text animate__animated animate__fadeInDown" v-if="showTestimony1">
                       <p>
                         Je recommande réellement ce site, après plus de
                         2 ans inscrite a l'auto école sans aller au code j'ai
@@ -373,7 +374,7 @@
                       </span>
                     </div>
 
-                    <div class="text" v-if="showTestimony2">
+                    <div class="text animate__animated animate__fadeInDown" v-if="showTestimony2">
                       <p>
                         Je tiens à vous remercier car grâce à vous j’ai
                         obtenu le code du premier coût alors que cela
@@ -395,7 +396,7 @@
                       </span>
                     </div>
 
-                    <div class="text" v-if="showTestimony3">
+                    <div class="text animate__animated animate__fadeInDown" v-if="showTestimony3">
                       <p>
                         Merci grâce à vous j'ai obtenu mon code de la
                         route su 1er coup en moins d'une semaine et à 65
@@ -417,7 +418,7 @@
                       </span>
                     </div>
 
-                    <div class="text" v-if="showTestimony4">
+                    <div class="text animate__animated animate__fadeInDown" v-if="showTestimony4">
                       <p>
                         Juste pour vous dire merci pourquoi grâce à vous
                         j’ai eu mon code ! J’avais déjà révisée avec

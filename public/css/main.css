@@ -90,6 +90,18 @@ a {
   font-weight: bolder;
 }
 
+.index1 {
+  z-index: -9999;
+}
+
+.index2 {
+  z-index: -9998;
+}
+
+.index3 {
+  z-index: 9999;
+}
+
 .hidden {
   display: none;
 }
@@ -102,11 +114,11 @@ a {
   width: 95%;
   margin: 10px auto;
   position: fixed;
+  z-index: 9999;
   padding-left: 20px;
 }
 .header__btn {
   cursor: pointer;
-  background-color: white;
   width: 50px;
   height: 50px;
   border-radius: 50%; /* Use border-radius with 50% to make it round */
@@ -188,7 +200,7 @@ a {
 .left .aside {
   display: block;
   margin-left: 0;
-  z-index: 99999;
+  z-index: -9999;
   padding-top: 20px;
   position: relative;
 }
@@ -282,7 +294,6 @@ a {
   height: 95vh;
   width: 100%;
   position: relative;
-  z-index: -9999;
 }
 .hero__content {
   display: flex;
@@ -319,6 +330,10 @@ a {
 .hero__content__text span i {
   margin-left: 15px;
   color: #273250;
+}
+.hero__content__text .btn:hover {
+  width: 220px;
+  transition: 500ms ease-in-out;
 }
 .hero__content__image {
   flex: 1;
@@ -359,7 +374,6 @@ a {
   text-align: center;
   transform: translateY(0);
   transition: transform 0.5s ease;
-  z-index: -9998;
 }
 .red__top {
   padding-top: 60px;
@@ -451,7 +465,7 @@ a {
   padding-bottom: 10px;
   position: relative;
   padding-top: 40px;
-  margin: 350px auto 0 auto;
+  margin: 580px auto 0 auto;
   text-align: center;
   z-index: -9999;
 }
@@ -601,7 +615,9 @@ a {
   border-radius: 10px;
   color: grey;
   margin: 10px auto;
+  padding-top: 8px;
   cursor: pointer;
+  text-align: center;
 }
 .testimonies__content__details .btns .click:hover {
   color: #F76448;
