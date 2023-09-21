@@ -119,7 +119,7 @@ a {
 }
 .header__btn {
   cursor: pointer;
-  width: 50px;
+  width: 0px;
   height: 50px;
   border-radius: 50%; /* Use border-radius with 50% to make it round */
   display: flex; /* Use flexbox to center the icon */
@@ -188,6 +188,52 @@ a {
 }
 .header__more ul li .link a:hover i {
   color: #273250;
+}
+
+.mobile_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 10px auto;
+  position: fixed;
+  z-index: 9999;
+  padding-left: 20px;
+  display: none;
+}
+.mobile_header__btn {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Use border-radius with 50% to make it round */
+  display: flex; /* Use flexbox to center the icon */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 2em;
+  color: #273250;
+  cursor: pointer;
+  font-weight: 100;
+}
+.mobile_header__btn:hover {
+  cursor: pointer;
+}
+.mobile_header__btn:hover i {
+  color: #F76448;
+}
+.mobile_header__logo {
+  color: #F76448;
+  font-size: 2.5em;
+  padding-top: 5px;
+}
+.mobile_header__logo a {
+  color: #273250;
+  font-weight: bold;
+}
+.mobile_header__logo a span {
+  color: #F76448;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .left {
@@ -797,6 +843,21 @@ a {
   }
   .header {
     display: none;
+  }
+  .mobile_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 90%;
+    margin: auto;
+  }
+  .left {
+    width: 100%;
+  }
+  .left .aside {
+    z-index: 9999;
   }
   .hero {
     height: auto;

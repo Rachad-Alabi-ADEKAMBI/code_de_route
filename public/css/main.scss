@@ -137,7 +137,7 @@ a{
 
     &__btn {
         cursor: pointer;
-        width: 50px;
+        width: 0px;
         height: 50px;
         border-radius: 50%; /* Use border-radius with 50% to make it round */
         display: flex; /* Use flexbox to center the icon */
@@ -228,13 +228,61 @@ a{
     }
 }
 
+.mobile_header{
+    @include flex();
+    width: 95%;
+    margin: 10px auto;
+    position: fixed;
+    z-index: 9999;
+    padding-left: 20px;
+    display: none;
+
+    &__btn {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; /* Use border-radius with 50% to make it round */
+        display: flex; /* Use flexbox to center the icon */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        font-size: 2em;
+        color: $secondary;
+        cursor: pointer;
+        font-weight: 100;
+    }
+
+    &__btn:hover{
+        cursor: pointer;
+        i{
+            color: $primary
+        }
+    }
+
+
+    &__logo{
+        color: $primary;
+        font-size: 2.5em;
+        padding-top: 5px;
+
+        a{
+            color: $secondary;
+            font-weight: bold;
+
+            span{
+                color: $primary;
+                font-style: italic;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
 .left{
     position: absolute;
     width: 480px;
     height: 100vh;
     background-color: whitesmoke;
-  //  display: none;
-  left: -100%;
+    left: -100%;
 
     .aside{
         display: block;
@@ -924,6 +972,21 @@ a{
 
     .header{
         display: none;
+    }
+
+    .mobile_header{
+        @include flex();
+        flex-direction: row-reverse;
+        width: 90%;
+        margin: auto;
+    }
+
+    .left{
+        width: 100%;
+
+        .aside{
+            z-index: 9999;
+        }
     }
 
     .hero{

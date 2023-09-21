@@ -12,7 +12,6 @@ var showText = function (target, message, index, interval) {
     showText("#msg", "Passe ton code de la route, vite fait, très bien fait !!", 0, 80);
   });
 
-
   //header btn
   $(document).ready(function() {
     // Sélectionnez le bouton
@@ -21,12 +20,15 @@ var showText = function (target, message, index, interval) {
     // Définissez la largeur finale du bouton
     var finalWidth = 220; // Ajustez la largeur finale selon vos besoins
 
-    // Animez la largeur du bouton
-    $button.css('width', finalWidth + 'px');
+    // Delay the animation by 5 seconds
+    setTimeout(function() {
+        // Animez la largeur du bouton after the delay
+        $button.animate({ width: finalWidth + 'px' }, 500); // 500 milliseconds for the animation
+    }, 200); // 5000 milliseconds (5 seconds) delay
 });
 
-//display left menu
 
+//display left menu
 function displayLeft() {
     const left = document.getElementById('left');
     const menu = document.getElementById('menu');

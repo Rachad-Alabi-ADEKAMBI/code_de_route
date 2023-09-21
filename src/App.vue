@@ -1,7 +1,7 @@
 <template>
 
-<header class="header animate__animated animate__fadeInDown"
-  id="header">
+<header class="header animate__animated
+ animate__fadeInDown"  id="header">
       <div class="header__btn"  id="btn" onclick="displayLeft()">
         <i class="bi bi-list"></i>
       </div>
@@ -68,10 +68,21 @@
             </li>
           </ul>
       </div>
-    </header>
+</header>
 
+<header class="mobile_header"  id="mobile_header">
+      <div class="header__btn"  id="btn" onclick="displayLeft()">
+        <i class="bi bi-list"></i>
+      </div>
 
-  <router-view/>
+      <div class="header__logo" id="logo">
+        <a href="/">
+            CO<span>DE</span>
+        </a>
+      </div>
+</header>
+
+<router-view/>
 </template>
 
 <script></script>
