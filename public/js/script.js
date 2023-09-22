@@ -24,7 +24,7 @@ var showText = function (target, message, index, interval) {
     setTimeout(function() {
         // Animez la largeur du bouton after the delay
         $button.animate({ width: finalWidth + 'px' }, 500); // 500 milliseconds for the animation
-    }, 200); // 5000 milliseconds (5 seconds) delay
+    }, 1); // 5000 milliseconds (5 seconds) delay
 });
 
 
@@ -245,10 +245,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const redSectionOffset = heroSection.offsetTop + heroHeight / 4; // Modifiez le déclencheur ici
         const redSectionHeight = redSection.clientHeight;
 
+        const mobile_logo = document.getElementById('mobile_logo')
+        mobile_logo.style.display = 'none'
+
         if (scrollPosition >= redSectionOffset && !isMoving) {
             isMoving = true;
-            redSection.style.transform = `translateY(-${redSectionHeight / 4}px)`; // Réduit la section de 1/4 de sa hauteur
-        } else if (scrollPosition < redSectionOffset && isMoving) {
+            redSection.style.transform = `translateY(-${redSectionHeight / 4}px)`;
+         } else if (scrollPosition < redSectionOffset && isMoving) {
             isMoving = false;
             redSection.style.transform = "translateY(0)";
         }

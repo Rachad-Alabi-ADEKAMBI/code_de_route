@@ -137,6 +137,7 @@ a{
 
     &__btn {
         cursor: pointer;
+        background-color: $white;
         width: 0px;
         height: 50px;
         border-radius: 50%; /* Use border-radius with 50% to make it round */
@@ -245,10 +246,15 @@ a{
         display: flex; /* Use flexbox to center the icon */
         justify-content: center; /* Center horizontally */
         align-items: center; /* Center vertically */
-        font-size: 2em;
+        font-size: 1.4em;
         color: $secondary;
         cursor: pointer;
-        font-weight: 100;
+        margin: 10px;
+
+        i{
+            margin: auto;
+        }
+
     }
 
     &__btn:hover{
@@ -979,6 +985,18 @@ a{
         flex-direction: row-reverse;
         width: 90%;
         margin: auto;
+
+        &__btn{
+            margin: 10px;
+            background-color: $white;
+            border-radius: 50%;
+
+            i{
+                font-size: 1.8em;
+            }
+        }
+
+
     }
 
     .left{
@@ -1006,10 +1024,11 @@ a{
 
         &__infos{
             width: 95%;
+            justify-content: space-evenly;
 
             &__info{
                 strong{
-                    font-size: 1.4em;
+                    font-size: 1.2em;
                 }
             }
         }
@@ -1051,7 +1070,7 @@ a{
     }
 
     .play{
-        margin: 150px auto 0 auto;
+        margin: 450px auto 0 auto;
         padding-bottom: 40px;
         &__video{
             width: 280px;
@@ -1065,6 +1084,7 @@ a{
 
         &__content{
             width: 90%;
+            flex-direction: column;
             &__image{
                 margin: 20px auto;
                 img{

@@ -71,11 +71,11 @@
 </header>
 
 <header class="mobile_header"  id="mobile_header">
-      <div class="header__btn"  id="btn" onclick="displayLeft()">
+      <div class="mobile_header__btn"  id="btn" onclick="displayLeft()">
         <i class="bi bi-list"></i>
       </div>
 
-      <div class="header__logo" id="logo">
+      <div class="mobile_header__logo" id="mobile_logo">
         <a href="/">
             CO<span>DE</span>
         </a>

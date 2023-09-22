@@ -119,6 +119,7 @@ a {
 }
 .header__btn {
   cursor: pointer;
+  background-color: white;
   width: 0px;
   height: 50px;
   border-radius: 50%; /* Use border-radius with 50% to make it round */
@@ -210,10 +211,13 @@ a {
   display: flex; /* Use flexbox to center the icon */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  font-size: 2em;
+  font-size: 1.4em;
   color: #273250;
   cursor: pointer;
-  font-weight: 100;
+  margin: 10px;
+}
+.mobile_header__btn i {
+  margin: auto;
 }
 .mobile_header__btn:hover {
   cursor: pointer;
@@ -853,6 +857,14 @@ a {
     width: 90%;
     margin: auto;
   }
+  .mobile_header__btn {
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .mobile_header__btn i {
+    font-size: 1.8em;
+  }
   .left {
     width: 100%;
   }
@@ -872,9 +884,10 @@ a {
   }
   .hero__infos {
     width: 95%;
+    justify-content: space-evenly;
   }
   .hero__infos__info strong {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   .red__top h2 {
     font-size: 3em;
@@ -896,7 +909,7 @@ a {
     font-size: 0.7em;
   }
   .play {
-    margin: 150px auto 0 auto;
+    margin: 450px auto 0 auto;
     padding-bottom: 40px;
   }
   .play__video {
@@ -906,6 +919,7 @@ a {
   }
   .play__content {
     width: 90%;
+    flex-direction: column;
   }
   .play__content__image {
     margin: 20px auto;
