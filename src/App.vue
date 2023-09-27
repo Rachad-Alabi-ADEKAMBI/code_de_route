@@ -1,9 +1,10 @@
 <template>
 
-<header class="header animate__animated
- animate__fadeInDown"  id="header">
+<header class="header animate__animated animate__fadeInDown"  id="header">
       <div class="header__btn"  id="btn" onclick="displayLeft()">
-        <i class="bi bi-list"></i>
+          <div class="content">
+            <i class="bi bi-list"></i>
+          </div>
       </div>
 
       <div class="header__logo" id="logo">

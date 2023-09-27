@@ -125,7 +125,6 @@ function detectUrlOnScroll() {
             hero.classList.add('index1');
             red.classList.add('index2');
 
-            btn.style.background = 'white';
 
             link_red.style.color = 'white';
             link_red_dot.style.color = 'white'

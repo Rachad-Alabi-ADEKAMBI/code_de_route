@@ -119,8 +119,7 @@ a {
 }
 .header__btn {
   cursor: pointer;
-  background-color: white;
-  width: 0px;
+  width: 50px;
   height: 50px;
   border-radius: 50%; /* Use border-radius with 50% to make it round */
   display: flex; /* Use flexbox to center the icon */
@@ -130,6 +129,15 @@ a {
   color: #273250;
   cursor: pointer;
   font-weight: 100;
+}
+.header__btn .content {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex; /* Use flexbox to center the icon */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 .header__btn:hover {
   cursor: pointer;
